@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import "./App.css";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import Contact from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home";
 import Portfolio from "./Components/Portfolio/Portfolio";
@@ -8,7 +8,7 @@ import About from "./Components/About/About";
 import Layout from "./Components/Layout";
 import Notfound from "./Components/Notfound";
 
-let routers = createBrowserRouter([
+let routers = createHashRouter([
   {
     path: "",
     element: <Layout />,
